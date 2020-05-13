@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/tcz001/databricks-sdk-go/models"
+	"github.com/syedatifakhtar/databricks-sdk-go/models"
 )
 
 type Options struct {

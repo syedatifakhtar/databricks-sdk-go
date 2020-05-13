@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/tcz001/databricks-sdk-go/api/scim"
-	"github.com/tcz001/databricks-sdk-go/client"
-	"github.com/tcz001/databricks-sdk-go/models"
+	"github.com/syedatifakhtar/databricks-sdk-go/api/scim"
+	"github.com/syedatifakhtar/databricks-sdk-go/client"
+	"github.com/syedatifakhtar/databricks-sdk-go/models"
 	"io/ioutil"
 )
 

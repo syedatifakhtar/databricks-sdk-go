@@ -40,6 +40,7 @@ func (c *Endpoint) CreateSync(request *models.ClustersCreateRequest) (
 		return &resp.ClusterId, nil
 	}
 
+	fmt.Println("Calling createSync")
 	err = c.executeSync(opFunc, models.RUNNING, []models.ClustersClusterState{
 		models.PENDING,
 	})

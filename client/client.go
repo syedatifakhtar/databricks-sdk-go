@@ -145,6 +145,7 @@ func (c *Client) buildRequest(method string, path string, data interface{}) (*ht
 
 func (c *Client) makeRequest(request *http.Request) ([]byte, error) {
 	glog.Infof("HTTP request: %v", request)
+	fmt.Println("HTTP request: %v", request)
 
 	response, err := c.http.Do(request)
 	if err != nil {
@@ -152,6 +153,7 @@ func (c *Client) makeRequest(request *http.Request) ([]byte, error) {
 	}
 
 	glog.Infof("HTTP response: %v", response)
+	fmt.Println("HTTP response: %v", response)
 
 	defer response.Body.Close()
 
@@ -165,6 +167,7 @@ func (c *Client) parseResponse(response http.Response) ([]byte, error) {
 	}
 
 	glog.Infof("Response bytes: %s", responseBytes)
+	fmt.Println("Response bytes: %s", responseBytes)
 
 	if response.StatusCode == 204 {
 		return nil, nil
